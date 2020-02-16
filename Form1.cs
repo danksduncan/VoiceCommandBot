@@ -13,6 +13,7 @@ namespace VoiceCommandBot
 {
     public partial class Form1 : Form
     {
+        SpeechSynthesizer s = new SpeechSynthesizer();
         public Form1()
         {
             InitializeComponent();
