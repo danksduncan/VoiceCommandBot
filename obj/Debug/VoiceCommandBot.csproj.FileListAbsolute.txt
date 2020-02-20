@@ -1,0 +1,9 @@
+C:\Users\conta\OneDrive\Desktop\VoiceCommandBot\obj\Debug\VoiceCommandBot.csprojAssemblyReference.cache
+C:\Users\conta\OneDrive\Desktop\VoiceCommandBot\obj\Debug\VoiceCommandBot.Form1.resources
+C:\Users\conta\OneDrive\Desktop\VoiceCommandBot\obj\Debug\VoiceCommandBot.Properties.Resources.resources
+C:\Users\conta\OneDrive\Desktop\VoiceCommandBot\obj\Debug\VoiceCommandBot.csproj.GenerateResource.cache
+C:\Users\conta\OneDrive\Desktop\VoiceCommandBot\bin\Debug\VoiceCommandBot.exe.config
+C:\Users\conta\OneDrive\Desktop\VoiceCommandBot\bin\Debug\VoiceCommandBot.exe
+C:\Users\conta\OneDrive\Desktop\VoiceCommandBot\bin\Debug\VoiceCommandBot.pdb
+C:\Users\conta\OneDrive\Desktop\VoiceCommandBot\obj\Debug\VoiceCommandBot.exe
+C:\Users\conta\OneDrive\Desktop\VoiceCommandBot\obj\Debug\VoiceCommandBot.pdb

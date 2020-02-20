@@ -16,6 +16,8 @@ namespace VoiceCommandBot
         SpeechSynthesizer s = new SpeechSynthesizer();
         public Form1()
         {
+            s.SelectVoiceByHints(VoiceGender.Female);
+            s.Speak("Hello, my name is Voice Bot");
             InitializeComponent();
         }
 
