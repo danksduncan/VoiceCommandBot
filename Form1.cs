@@ -15,6 +15,7 @@ namespace VoiceCommandBot
     public partial class Form1 : Form
     {
         SpeechSynthesizer s = new SpeechSynthesizer();
+        Choices list = new Choices();
         public Form1()
         {
             s.SelectVoiceByHints(VoiceGender.Female);
