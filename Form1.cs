@@ -14,6 +14,7 @@ namespace VoiceCommandBot
 {
     public partial class Form1 : Form
     {
+        SpeechRecognitionEngine rec = new SpeechRecognitionEngine();
         SpeechSynthesizer s = new SpeechSynthesizer();
         Choices list = new Choices();
         public Form1()
