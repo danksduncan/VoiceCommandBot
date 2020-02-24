@@ -14,11 +14,13 @@ namespace VoiceCommandBot
 {
     public partial class Form1 : Form
     {
-        SpeechRecognitionEngine rec = new SpeechRecognitionEngine();
         SpeechSynthesizer s = new SpeechSynthesizer();
         Choices list = new Choices();
         public Form1()
         {
+            SpeechRecognitionEngine rec = new SpeechRecognitionEngine();
+            list.Add(new string[] { "Hello", "How are you?" });
+
             s.SelectVoiceByHints(VoiceGender.Female);
             s.Speak("Hello, my name is Voice Bot");
             InitializeComponent();
