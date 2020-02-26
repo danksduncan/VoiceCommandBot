@@ -20,6 +20,7 @@ namespace VoiceCommandBot
         {
             SpeechRecognitionEngine rec = new SpeechRecognitionEngine();
             list.Add(new string[] { "Hello", "How are you?" });
+            Grammar gr = new Grammar(new GrammarBuilder(list));
 
             s.SelectVoiceByHints(VoiceGender.Female);
             s.Speak("Hello, my name is Voice Bot");
