@@ -22,6 +22,11 @@ namespace VoiceCommandBot
             list.Add(new string[] { "Hello", "How are you?" });
             Grammar gr = new Grammar(new GrammarBuilder(list));
 
+            try
+            {
+
+            }
+
             s.SelectVoiceByHints(VoiceGender.Female);
             s.Speak("Hello, my name is Voice Bot");
             InitializeComponent();
