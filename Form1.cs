@@ -24,7 +24,7 @@ namespace VoiceCommandBot
 
             try
             {
-
+                rec.RequestRecognizerUpdate();
             }
 
             s.SelectVoiceByHints(VoiceGender.Female);
