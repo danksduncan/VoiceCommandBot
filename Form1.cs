@@ -26,11 +26,19 @@ namespace VoiceCommandBot
             {
                 rec.RequestRecognizerUpdate();
                 rec.LoadGrammar(gr);
+                rec.SpeechRecognized += rec_Speechrecognized;
+                rec.SetInputToDefaultAudioDevice();
+                rec.RecognizeAsync(RecognizeMode.Multiple);
             }
 
             s.SelectVoiceByHints(VoiceGender.Female);
             s.Speak("Hello, my name is Voice Bot");
             InitializeComponent();
+        }
+
+        private void rec_Speechrecognized(object sender, SpeechRecognizedEventArgs e)
+        {
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
