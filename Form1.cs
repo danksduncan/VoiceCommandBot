@@ -36,6 +36,11 @@ namespace VoiceCommandBot
             InitializeComponent();
         }
 
+        public void say()
+        {
+
+        }
+
         private void rec_Speechrecognized(object sender, SpeechRecognizedEventArgs e)
         {
 
