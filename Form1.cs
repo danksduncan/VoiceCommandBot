@@ -36,7 +36,7 @@ namespace VoiceCommandBot
             InitializeComponent();
         }
 
-        public void say()
+        public void say(String h)
         {
 
         }
