@@ -38,7 +38,7 @@ namespace VoiceCommandBot
 
         public void say(String h)
         {
-
+            s.Speak(h);
         }
 
         private void rec_Speechrecognized(object sender, SpeechRecognizedEventArgs e)
