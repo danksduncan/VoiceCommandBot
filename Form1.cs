@@ -43,7 +43,7 @@ namespace VoiceCommandBot
 
         private void rec_Speechrecognized(object sender, SpeechRecognizedEventArgs e)
         {
-
+            String r = e.Result.Text;
         }
 
         private void Form1_Load(object sender, EventArgs e)
