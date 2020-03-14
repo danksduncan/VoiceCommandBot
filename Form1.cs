@@ -39,11 +39,17 @@ namespace VoiceCommandBot
         public void say(String h)
         {
             s.Speak(h);
+
         }
 
         private void rec_Speechrecognized(object sender, SpeechRecognizedEventArgs e)
         {
             String r = e.Result.Text;
+
+            if (r == "hello")
+            {
+
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
