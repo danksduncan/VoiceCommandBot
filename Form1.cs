@@ -48,7 +48,7 @@ namespace VoiceCommandBot
 
             if (r == "hello")
             {
-
+                say("Hi");
             }
         }
 
