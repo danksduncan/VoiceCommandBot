@@ -46,8 +46,10 @@ namespace VoiceCommandBot
         {
             String r = e.Result.Text;
 
+            //what you say
             if (r == "hello")
             {
+                //what it says
                 say("Hi");
             }
         }
