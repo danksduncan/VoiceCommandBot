@@ -52,6 +52,11 @@ namespace VoiceCommandBot
                 //what it says
                 say("Hi");
             }
+
+            if (r == "how are you")
+            {
+                say("Great, and you?");
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
