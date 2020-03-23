@@ -19,7 +19,7 @@ namespace VoiceCommandBot
         public Form1()
         {
             SpeechRecognitionEngine rec = new SpeechRecognitionEngine();
-            list.Add(new string[] { "Hello", "How are you?" });
+            list.Add(new string[] { "hello", "how are you?" });
             Grammar gr = new Grammar(new GrammarBuilder(list));
 
             try
@@ -34,7 +34,7 @@ namespace VoiceCommandBot
             catch { return; }
 
             s.SelectVoiceByHints(VoiceGender.Female);
-            s.Speak("Hello, my name is Voice Bot");
+            s.Speak("Hello, My name is Voice Bot");
             InitializeComponent();
         }
 
