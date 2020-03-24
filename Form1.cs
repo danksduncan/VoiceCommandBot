@@ -19,7 +19,7 @@ namespace VoiceCommandBot
         public Form1()
         {
             SpeechRecognitionEngine rec = new SpeechRecognitionEngine();
-            list.Add(new string[] { "hello", "how are you?" });
+            list.Add(new string[] { "hello", "how are you", "what time is it" });
             Grammar gr = new Grammar(new GrammarBuilder(list));
 
             try
