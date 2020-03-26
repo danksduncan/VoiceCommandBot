@@ -55,6 +55,11 @@ namespace VoiceCommandBot
                 say("Hi");
             }
 
+            if(r == "what time is it")
+            {
+                say(DateTime.Now.ToString("h:mm tt"));
+            }
+
             if (r == "how are you")
             {
                 say("Great, and you?");
