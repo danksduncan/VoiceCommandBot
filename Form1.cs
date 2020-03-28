@@ -19,7 +19,7 @@ namespace VoiceCommandBot
         public Form1()
         {
             SpeechRecognitionEngine rec = new SpeechRecognitionEngine();
-            list.Add(new string[] { "hello", "how are you", "what time is it" });
+            list.Add(new string[] { "hello", "how are you", "what time is it", "what is today" });
             Grammar gr = new Grammar(new GrammarBuilder(list));
 
             try
@@ -58,6 +58,11 @@ namespace VoiceCommandBot
             if(r == "what time is it")
             {
                 say(DateTime.Now.ToString("h:mm tt"));
+            }
+
+            if (r == "what is today")
+            {
+                say(DateTime.Now.ToString("M/d/yyyy"));
             }
 
             if (r == "how are you")
