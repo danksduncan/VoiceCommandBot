@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Speech.Synthesis;
 using System.Speech.Recognition;
+using System.Diagnostics;
 
 namespace VoiceCommandBot
 {
@@ -19,7 +20,7 @@ namespace VoiceCommandBot
         public Form1()
         {
             SpeechRecognitionEngine rec = new SpeechRecognitionEngine();
-            list.Add(new string[] { "hello", "how are you", "what time is it", "what is today" });
+            list.Add(new string[] { "hello", "how are you", "what time is it", "what is today", "open google' });
             Grammar gr = new Grammar(new GrammarBuilder(list));
 
             try
@@ -68,6 +69,11 @@ namespace VoiceCommandBot
             if (r == "how are you")
             {
                 say("Great, and you?");
+            }
+
+            if (r == "open google")
+            {
+                Process.Start("http://google.com");
             }
         }
 
