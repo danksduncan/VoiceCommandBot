@@ -16,11 +16,14 @@ namespace VoiceCommandBot
     public partial class Form1 : Form
     {
         SpeechSynthesizer s = new SpeechSynthesizer();
+
+        Boolean wake = true;
+
         Choices list = new Choices();
         public Form1()
         {
             SpeechRecognitionEngine rec = new SpeechRecognitionEngine();
-            list.Add(new string[] { "hello", "how are you", "what time is it", "what is today", "open google' });
+            list.Add(new string[] { "hello", "how are you", "what time is it", "what is today", "open google" });
             Grammar gr = new Grammar(new GrammarBuilder(list));
 
             try
