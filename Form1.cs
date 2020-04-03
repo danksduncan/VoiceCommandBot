@@ -38,7 +38,6 @@ namespace VoiceCommandBot
             catch { return; }
 
             s.SelectVoiceByHints(VoiceGender.Female);
-            s.Speak("Hello, My name is Voice Bot");
             InitializeComponent();
         }
 
