@@ -51,6 +51,9 @@ namespace VoiceCommandBot
         {
             String r = e.Result.Text;
 
+            if (r == "wake") wake = true;
+            if (r == "sleep") wake = false;
+
             //what you say
             if (r == "hello")
             {
