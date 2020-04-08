@@ -54,31 +54,35 @@ namespace VoiceCommandBot
             if (r == "wake") wake = true;
             if (r == "sleep") wake = false;
 
-            //what you say
-            if (r == "hello")
+            if (wake == true)
             {
-                //what it says
-                say("Hi");
-            }
 
-            if(r == "what time is it")
-            {
-                say(DateTime.Now.ToString("h:mm tt"));
-            }
+                //what you say
+                if (r == "hello")
+                {
+                    //what it says
+                    say("Hi");
+                }
 
-            if (r == "what is today")
-            {
-                say(DateTime.Now.ToString("M/d/yyyy"));
-            }
+                if (r == "what time is it")
+                {
+                    say(DateTime.Now.ToString("h:mm tt"));
+                }
 
-            if (r == "how are you")
-            {
-                say("Great, and you?");
-            }
+                if (r == "what is today")
+                {
+                    say(DateTime.Now.ToString("M/d/yyyy"));
+                }
 
-            if (r == "open google")
-            {
-                Process.Start("http://google.com");
+                if (r == "how are you")
+                {
+                    say("Great, and you?");
+                }
+
+                if (r == "open google")
+                {
+                    Process.Start("http://google.com");
+                }
             }
         }
 
