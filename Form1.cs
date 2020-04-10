@@ -41,6 +41,11 @@ namespace VoiceCommandBot
             InitializeComponent();
         }
 
+        public void restart()
+        {
+
+        }
+
         public void say(String h)
         {
             s.Speak(h);
