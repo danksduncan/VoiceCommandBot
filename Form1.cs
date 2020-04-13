@@ -43,7 +43,7 @@ namespace VoiceCommandBot
 
         public void restart()
         {
-
+            Process.Start(@"C:\Users\Amy\amy.exe");
         }
 
         public void say(String h)
