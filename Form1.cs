@@ -44,6 +44,7 @@ namespace VoiceCommandBot
         public void restart()
         {
             Process.Start(@"C:\Users\Amy\amy.exe");
+            Environment.Exit(0);
         }
 
         public void say(String h)
