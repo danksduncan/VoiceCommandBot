@@ -63,6 +63,11 @@ namespace VoiceCommandBot
             if (wake == true)
             {
 
+                if (r == "restart" || r == "update")
+                {
+                    restart();
+                }
+
                 //what you say
                 if (r == "hello")
                 {
