@@ -50,7 +50,7 @@ namespace VoiceCommandBot
         public void say(String h)
         {
             s.Speak(h);
-            textBox1.AppendText(h + "\n");
+            textBox1.AppendText(h + "\n"); 
 
         }
 
