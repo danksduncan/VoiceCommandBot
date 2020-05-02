@@ -51,7 +51,6 @@ namespace VoiceCommandBot
         {
             s.Speak(h);
             textBox2.AppendText(h + "\n"); 
-
         }
 
         private void rec_Speechrecognized(object sender, SpeechRecognizedEventArgs e)
@@ -96,6 +95,7 @@ namespace VoiceCommandBot
                     Process.Start("http://google.com");
                 }
             }
+            textBox1.AppendText(r + "\n");
         }
 
         private void Form1_Load(object sender, EventArgs e)
