@@ -90,10 +90,10 @@ namespace VoiceCommandBot
                     say("Great, and you?");
                 }
 
-                if (r == "open google")
-                {
-                    Process.Start("http://google.com");
-                }
+                //if (r == "open google")
+                //{
+                //    Process.Start("http://google.com");
+                //}
             }
             textBox1.AppendText(r + "\n");
         }
