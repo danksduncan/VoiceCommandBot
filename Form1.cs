@@ -57,8 +57,16 @@ namespace VoiceCommandBot
         {
             String r = e.Result.Text;
 
-            if (r == "wake") wake = true;
-            if (r == "sleep") wake = false;
+            if (r == "wake")
+            {
+                wake = true;
+                label3.Text = "State: Awake";
+            }
+            if (r == "sleep")
+            {
+                wake = false;
+                label3.Text = "State: Sleep mode";
+            }
 
             if (wake == true)
             {
