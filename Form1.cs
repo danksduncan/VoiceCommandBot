@@ -70,6 +70,15 @@ namespace VoiceCommandBot
 
             if (wake == true)
             {
+                if (r == "open office")
+                {
+
+                }
+
+                if (r == "close office")
+                {
+
+                }
 
                 if (r == "restart" || r == "update")
                 {
