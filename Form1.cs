@@ -23,7 +23,7 @@ namespace VoiceCommandBot
         public Form1()
         {
             SpeechRecognitionEngine rec = new SpeechRecognitionEngine();
-            list.Add(new string[] { "hello", "how are you", "what time is it", "what is today", "open google", "wake", "sleep", "restart", "update", "open office", "close office" });
+            list.Add(new string[] { "hello", "how are you", "what time is it", "what is today", "open google", "wake", "sleep", "restart", "update", "open word document", "close word document" });
             Grammar gr = new Grammar(new GrammarBuilder(list));
 
             try
@@ -70,12 +70,12 @@ namespace VoiceCommandBot
 
             if (wake == true)
             {
-                if (r == "open office")
+                if (r == "open word document")
                 {
-
+                    Process.Start(@"C:\\Program Files\\Microsoft Office\\root\\Office16\\WINWORD.EXE");
                 }
 
-                if (r == "close office")
+                if (r == "close word document")
                 {
 
                 }
