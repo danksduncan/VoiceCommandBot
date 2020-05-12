@@ -41,6 +41,32 @@ namespace VoiceCommandBot
             InitializeComponent();
         }
 
+        public static void killProg(String s)
+        {
+            System.Diagnostics.Process[] procs = null;
+
+            try
+            {
+                procs = Process.GetProcessesByName(s);
+                Process prog = procs[0];
+
+                if (!prog.HasExited)
+                {
+                    prog.Kill();
+                }
+            }
+            finally
+            {
+                if (procs != null)
+                {
+                    foreach(Process p in procs)
+                    {
+                        p.Dispose();
+                    }
+                } 
+            }
+        }
+
         public void restart()
         {
             Process.Start(@"C:\Users\VBot\VBot.exe");
