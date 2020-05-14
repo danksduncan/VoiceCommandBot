@@ -103,7 +103,7 @@ namespace VoiceCommandBot
 
                 if (r == "close word document")
                 {
-
+                    killProg("WINWORD.EXE");
                 }
 
                 if (r == "restart" || r == "update")
