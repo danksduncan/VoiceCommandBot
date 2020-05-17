@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Speech.Synthesis;
 using System.Speech.Recognition;
 using System.Diagnostics;
+using System.Xml;
 
 namespace VoiceCommandBot
 {
@@ -41,6 +42,47 @@ namespace VoiceCommandBot
 
             s.SelectVoiceByHints(VoiceGender.Female);
             InitializeComponent();
+        }
+
+        public String GetWeather(String input)
+        {
+            String query = String.Format("https://query.yahooapis.com/v1/public/yql?q=select * from weather.forecast where woeid in (select woeid from geo.places(1) where text='city, state')&format=xml&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys");
+            XmlDocument wData = new XmlDocument();
+            wData.Load(query);
+
+            XmlNamespaceManager manager = new XmlNamespaceManager(wData.NameTable);
+            manager.AddNamespace("yweather", "http://xml.weather.yahoo.com/ns/rss/1.0");
+
+            XmlNode channel = wData.SelectSingleNode("query").SelectSingleNode("results").SelectSingleNode("channel");
+            XmlNodeList nodes = wData.SelectNodes("query/results/channel");
+            try
+            {
+                temp = channel.SelectSingleNode("item").SelectSingleNode("yweather:condition", manager).Attributes["temp"].Value;
+                condition = channel.SelectSingleNode("item").SelectSingleNode("yweather:condition", manager).Attributes["text"].Value;
+                high = channel.SelectSingleNode("item").SelectSingleNode("yweather:forecast", manager).Attributes["high"].Value;
+                low = channel.SelectSingleNode("item").SelectSingleNode("yweather:forecast", manager).Attributes["low"].Value;
+                if (input == "temp")
+                {
+                    return temp;
+                }
+                if (input == "high")
+                {
+                    return high;
+                }
+                if (input == "low")
+                {
+                    return low;
+                }
+                if (input == "cond")
+                {
+                    return condition;
+                }
+            }
+            catch
+            {
+                return "Error Reciving data";
+            }
+            return "error";
         }
 
         public static void killProg(String s)
