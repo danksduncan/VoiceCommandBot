@@ -65,14 +65,6 @@ namespace VoiceCommandBot
                 {
                     return temp;
                 }
-                if (input == "high")
-                {
-                    return high;
-                }
-                if (input == "low")
-                {
-                    return low;
-                }
                 if (input == "cond")
                 {
                     return condition;
