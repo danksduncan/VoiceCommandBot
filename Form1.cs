@@ -20,6 +20,9 @@ namespace VoiceCommandBot
 
         Boolean wake = true;
 
+        String temp;
+        String cond;
+
         Choices list = new Choices();
         public Form1()
         {
