@@ -19,9 +19,9 @@ namespace VoiceCommandBot
         SpeechSynthesizer s = new SpeechSynthesizer();
 
         Boolean wake = true;
-
+        
         String temp;
-        String cond;
+        String condition;
 
         Choices list = new Choices();
         public Form1()
@@ -62,8 +62,6 @@ namespace VoiceCommandBot
             {
                 temp = channel.SelectSingleNode("item").SelectSingleNode("yweather:condition", manager).Attributes["temp"].Value;
                 condition = channel.SelectSingleNode("item").SelectSingleNode("yweather:condition", manager).Attributes["text"].Value;
-                high = channel.SelectSingleNode("item").SelectSingleNode("yweather:forecast", manager).Attributes["high"].Value;
-                low = channel.SelectSingleNode("item").SelectSingleNode("yweather:forecast", manager).Attributes["low"].Value;
                 if (input == "temp")
                 {
                     return temp;
