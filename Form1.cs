@@ -116,6 +116,8 @@ namespace VoiceCommandBot
             textBox2.AppendText(h + "\n"); 
         }
 
+        //Commands
+
         private void rec_Speechrecognized(object sender, SpeechRecognizedEventArgs e)
         {
             String r = e.Result.Text;
@@ -133,6 +135,12 @@ namespace VoiceCommandBot
 
             if (wake == true)
             {
+
+                if (r == "whats the weather like")
+                {
+                    say("The sky is, " + GetWeather("cond") + ".");
+                }
+
                 if (r == "open word document")
                 {
                     Process.Start(@"C:\\Program Files\\Microsoft Office\\root\\Office16\\WINWORD.EXE");
