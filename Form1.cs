@@ -138,7 +138,12 @@ namespace VoiceCommandBot
 
                 if (r == "whats the weather like")
                 {
-                    say("The sky is, " + GetWeather("cond") + ".");
+                    say("The sky is " + GetWeather("cond") + ".");
+                }
+
+                if (r == "whats the temperature")
+                {
+                    say("it is" + GetWeather("temp") + "degrees.");
                 }
 
                 if (r == "open word document")
