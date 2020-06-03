@@ -18,7 +18,7 @@ namespace VoiceCommandBot
     {
         SpeechSynthesizer s = new SpeechSynthesizer();
 
-        Boolean wake = true;
+        Boolean wake = false;
         
         String temp;
         String condition;
