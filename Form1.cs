@@ -122,6 +122,10 @@ namespace VoiceCommandBot
         {
             String r = e.Result.Text;
 
+            if (r == "hey amy")
+            {
+                wake = true;
+            }
             if (r == "wake")
             {
                 wake = true;
