@@ -113,6 +113,7 @@ namespace VoiceCommandBot
         public void say(String h)
         {
             s.Speak(h);
+            wake = false;
             textBox2.AppendText(h + "\n"); 
         }
 
