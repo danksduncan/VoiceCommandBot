@@ -117,6 +117,8 @@ namespace VoiceCommandBot
             textBox2.AppendText(h + "\n"); 
         }
 
+        String[] greetings = new String[3] {"Hi", "Hello", "Hi, How are you" };
+
         //Commands
 
         private void rec_Speechrecognized(object sender, SpeechRecognizedEventArgs e)
