@@ -119,6 +119,11 @@ namespace VoiceCommandBot
 
         String[] greetings = new String[3] {"Hi", "Hello", "Hi, How are you" };
 
+        public String greetings_action()
+        {
+
+        }
+
         //Commands
 
         private void rec_Speechrecognized(object sender, SpeechRecognizedEventArgs e)
