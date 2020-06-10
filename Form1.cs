@@ -121,7 +121,8 @@ namespace VoiceCommandBot
 
         public String greetings_action()
         {
-
+            Random r = new Random();
+            return greetings[r.Next(3)];
         }
 
         //Commands
