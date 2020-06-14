@@ -51,7 +51,16 @@ namespace VoiceCommandBot
         {
             String query = String.Format("https://query.yahooapis.com/v1/public/yql?q=select * from weather.forecast where woeid in (select woeid from geo.places(1) where text='orlando, fl')&format=xml&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys");
             XmlDocument wData = new XmlDocument();
-            wData.Load(query);
+
+            try
+            {
+                wData.Load(query);
+            }
+            catch
+            {
+                MessageBox.Show("No Internet Connection!");
+                return "No Internet";
+            }
 
             XmlNamespaceManager manager = new XmlNamespaceManager(wData.NameTable);
             manager.AddNamespace("yweather", "http://xml.weather.yahoo.com/ns/rss/1.0");
