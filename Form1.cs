@@ -159,6 +159,10 @@ namespace VoiceCommandBot
 
             if (wake == true)
             {
+                if (r == "minimize")
+                {
+                    this.WindowState = FormWindowState.Minimized;
+                }
 
                 if (r == "whats the weather like")
                 {
