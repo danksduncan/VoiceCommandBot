@@ -154,7 +154,7 @@ namespace VoiceCommandBot
             if (r == "sleep")
             {
                 wake = false;
-                label3.Text = "State: Sleep mode";
+                label3.Text = "State: Sleep mode"; 
             }
 
             if (wake == true)
