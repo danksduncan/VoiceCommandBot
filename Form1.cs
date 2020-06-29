@@ -159,10 +159,16 @@ namespace VoiceCommandBot
 
             if (wake == true)
             {
+                if (r == "spotify")
+                {
+                    Process.Start("Spotify");
+                }
+
                 if (r == "play" || r == "pause")
                 {
                     SendKeys.Send(" ");
                 }
+
                 if (r == "minimize")
                 {
                     this.WindowState = FormWindowState.Minimized;
