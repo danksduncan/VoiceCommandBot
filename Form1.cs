@@ -159,6 +159,11 @@ namespace VoiceCommandBot
 
             if (wake == true)
             {
+                if (r == "next")
+                {
+                    SendKeys.Send("^{RIGHT}");
+                }
+
                 if (r == "spotify")
                 {
                     Process.Start(@"C:\\Program Files\\WindowsApps\\SpotifyAB.SpotifyMusic_1.135.458.0_x86__zpdnekdrzrea0\\Spotify.exe");
