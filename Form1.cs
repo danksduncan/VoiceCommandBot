@@ -159,6 +159,11 @@ namespace VoiceCommandBot
 
             if (wake == true)
             {
+                if (r == "last")
+                {
+                    SendKeys.Send("^{LEFT}");
+                }
+
                 if (r == "next")
                 {
                     SendKeys.Send("^{RIGHT}");
