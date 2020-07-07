@@ -69,7 +69,9 @@ namespace VoiceCommandBot
             XmlNodeList nodes = wData.SelectNodes("query/results/channel");
             try
             {
+                int rawTemp = int.Parse(channel.SelectSingleNode("item").SelectSingleNode("yweather:condition", manager).Attributes["temp"].Value);
                 temp = channel.SelectSingleNode("item").SelectSingleNode("yweather:condition", manager).Attributes["temp"].Value;
+                //celcius = (rawTemp - 32) * 5 / 9 + "";
                 condition = channel.SelectSingleNode("item").SelectSingleNode("yweather:condition", manager).Attributes["text"].Value;
                 if (input == "temp")
                 {
