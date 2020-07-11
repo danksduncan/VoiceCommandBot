@@ -19,7 +19,9 @@ namespace VoiceCommandBot
         SpeechSynthesizer s = new SpeechSynthesizer();
 
         Boolean wake = false;
-        
+
+        String name = "Duncan";
+
         String temp;
         String condition;
 
@@ -28,7 +30,7 @@ namespace VoiceCommandBot
         {
             SpeechRecognitionEngine rec = new SpeechRecognitionEngine();
             list.Add(new string[] { "hello", "how are you", "what time is it", "what is today", "open google", "wake", "sleep", "restart", "update", "open word document", "close word document",
-            "whats the weather like", "whats the temperature", "hey amy", "minimize", "unminimize", "maximize", "play", "pause", "spotify", "next", "last" });
+            "whats the weather like", "whats the temperature", "hey amy", "minimize", "unminimize", "maximize", "play", "pause", "spotify", "next", "last", "whats my name" });
 
             Grammar gr = new Grammar(new GrammarBuilder(list));
 
@@ -161,6 +163,11 @@ namespace VoiceCommandBot
 
             if (wake == true)
             {
+                if (r == "whats my name")
+                {
+                    say(name);
+                }
+
                 if (r == "last")
                 {
                     SendKeys.Send("^{LEFT}");
