@@ -21,6 +21,7 @@ namespace VoiceCommandBot
         Boolean wake = false;
 
         String name = "Duncan";
+        Boolean var1 = false;
 
         String temp;
         String condition;
