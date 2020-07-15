@@ -31,7 +31,7 @@ namespace VoiceCommandBot
         {
             SpeechRecognitionEngine rec = new SpeechRecognitionEngine();
             list.Add(new string[] { "hello", "how are you", "what time is it", "what is today", "open google", "wake", "sleep", "restart", "update", "open word document", "close word document",
-            "whats the weather like", "whats the temperature", "hey amy", "minimize", "unminimize", "maximize", "play", "pause", "spotify", "next", "last", "whats my name" });
+            "whats the weather like", "whats the temperature", "hey amy", "minimize", "unminimize", "maximize", "play", "pause", "spotify", "next", "last", "whats my name", "do i like cake" });
 
             Grammar gr = new Grammar(new GrammarBuilder(list));
 
