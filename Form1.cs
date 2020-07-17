@@ -164,6 +164,15 @@ namespace VoiceCommandBot
 
             if (wake == true)
             {
+                if (r == "do i like cake")
+                {
+                    if (var1)
+                        say("No, you dont like cake");
+
+                    if (!var1)
+                        say("Yes, you love cake");
+                }
+
                 if (r == "whats my name")
                 {
                     say(name);
