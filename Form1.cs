@@ -169,7 +169,7 @@ namespace VoiceCommandBot
                     if (var1)
                         say("No, you dont like cake");
 
-                    if (!var1)
+                    if (var1 == false)
                         say("Yes, you love cake");
                 }
 
