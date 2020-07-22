@@ -166,10 +166,10 @@ namespace VoiceCommandBot
             {
                 if (r == "do i like cake")
                 {
-                    if (var1 == true)
+                    if (!var1)
                         say("No, you dont like cake");
 
-                    if (var1 == false)
+                    if (var1)
                         say("Yes, you love cake");
                 }
 
