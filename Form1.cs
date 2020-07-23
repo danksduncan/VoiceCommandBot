@@ -167,10 +167,10 @@ namespace VoiceCommandBot
                 if (r == "do i like cake")
                 {
                     if (!var1)
-                        say("No, you dont like cake");
+                        say("No, "+name+" you dont like cake");
 
                     if (var1)
-                        say("Yes, you love cake");
+                        say("Yes, "+name+" you love cake");
                 }
 
                 if (r == "whats my name")
