@@ -128,10 +128,10 @@ namespace VoiceCommandBot
         {
             s.Speak(h);
             wake = false;
-            textBox2.AppendText(h + "\n"); 
+            textBox1.AppendText(h + "\n"); 
         }
 
-        String[] greetings = new String[3] {"Hi", "Hello", "Hi, How are you" };
+        String[] greetings = new String[3] {"hi", "hello", "hi, how are you" };
 
         public String greetings_action()
         {
@@ -238,11 +238,9 @@ namespace VoiceCommandBot
                     restart();
                 }
 
-                //what you say
                 if (r == "hello")
                 {
-                    //what it says
-                    say("Hi");
+                    say("hi");
                 }
 
                 if (r == "what time is it")
@@ -265,7 +263,7 @@ namespace VoiceCommandBot
                 //    Process.Start("http://google.com");
                 //}
             }
-            textBox1.AppendText(r + "\n");
+            textBox1.AppendText("\n");
         }
 
         private void Form1_Load(object sender, EventArgs e)
