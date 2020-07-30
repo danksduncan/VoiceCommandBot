@@ -148,7 +148,6 @@ namespace VoiceCommandBot
             if (r == "hey amy")
             {
                 wake = true;
-
                 say(greetings_action());
             }
             if (r == "wake")
