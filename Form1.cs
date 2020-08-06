@@ -128,7 +128,7 @@ namespace VoiceCommandBot
         {
             s.Speak(h);
             wake = false;
-            textBox1.AppendText(h + "\n"); 
+            textBox1.AppendText(h); 
         }
 
         String[] greetings = new String[3] {"hi", "hello", "hi, how are you" };
