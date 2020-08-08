@@ -131,7 +131,7 @@ namespace VoiceCommandBot
             textBox1.AppendText(h); 
         }
 
-        String[] greetings = new String[3] {"hi", "hello", "hi, how are you" };
+        String[] greetings = new String[4] {"hi", "hello", "hey", "hi, how are you" };
 
         public String greetings_action()
         {
