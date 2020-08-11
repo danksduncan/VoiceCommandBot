@@ -139,8 +139,6 @@ namespace VoiceCommandBot
             return greetings[r.Next(3)];
         }
 
-        //Commands
-
         private void rec_Speechrecognized(object sender, SpeechRecognizedEventArgs e)
         {
             String r = e.Result.Text;
