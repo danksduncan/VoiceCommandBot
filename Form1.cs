@@ -252,7 +252,7 @@ namespace VoiceCommandBot
 
                 if (r == "how are you")
                 {
-                    say("Great, and you?");
+                    say("great, and you?");
                 }
 
                 if (r == "open google")
